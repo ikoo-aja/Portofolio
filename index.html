@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">PORTFOLIO<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#experience">Pendidikan</a></li>
+                <li><a href="#achievements">Prestasi</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero section">
+        <div class="container">
+            <div class="hero-content">
+                <h3 class="fade-in">Halo, Saya</h3>
+                <h1 class="fade-in">Iqbal Khoir</h1>
+                <h2 class="fade-in">Software Engineering Student & Cyber Security Enthusiast</h2>
+                <p class="fade-in">Siswa Rekayasa Perangkat Lunak di SMKN 17 Jakarta dengan minat mendalam di bidang Cyber Security. Berpengalaman dalam membangun aplikasi web menggunakan Laravel dan ASP.NET.</p>
+                <div class="hero-btns fade-in">
+                    <a href="#projects" class="btn primary-btn">Lihat Project Saya</a>
+                    <a href="#contact" class="btn secondary-btn">Hubungi Saya</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-wrapper">
+                <div class="about-img">
+                    <div class="img-placeholder">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Pelajar RPL di SMKN 17 Jakarta</h3>
+                    <p>Saya adalah seorang pelajar yang berfokus pada pengembangan perangkat lunak (RPL). Selain coding, saya memiliki ketertarikan besar pada dunia Cyber Security dan terus belajar untuk mengamankan sistem digital.</p>
+                    <p>Melalui perjalanan pendidikan saya di SMKN 17 Jakarta, saya telah mengasah kemampuan dalam logika pemrograman, basis data, dan pengembangan aplikasi full-stack.</p>
+                    <div class="about-info">
+                        <div class="info-item"><span>Email:</span> ibrahimied004@gmail.com</div>
+                        <div class="info-item"><span>Sekolah:</span> SMKN 17 Jakarta</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section bg-dark-alt">
+        <div class="container">
+            <h2 class="section-title">Keahlian</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-laravel"></i>
+                    <h3>Laravel</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>ASP.NET</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-shield-halved"></i>
+                    <h3>Cyber Security</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5/CSS3</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL Database</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-linux"></i>
+                    <h3>Linux</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">Project Unggulan</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <!-- Ganti 'assets/FitTrack.png' dengan file lo -->
+                        <img src="assets/FitTrack.png" alt="FitTrack" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                        <div class="img-placeholder-project" style="display: none;">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>FitTrack</h3>
+                        <p>Aplikasi mobile pelacak kebugaran dan kesehatan yang dibangun menggunakan framework .NET MAUI untuk pengalaman cross-platform yang lancar.</p>
+                        <div class="tags">
+                            <span>.NET MAUI</span>
+                            <span>C#</span>
+                            <span>Mobile App</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <!-- Path file lo udah bener, tapi harus pake tag <img> -->
+                        <img src="assets/Agriculture.png" alt="Agriculture" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                        <div class="img-placeholder-project" style="display: none;">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Agriculture</h3>
+                        <p>Sistem Informasi Pertanian yang dirancang untuk mengelola data dan informasi agrikultur secara efisien.</p>
+                        <div class="tags">
+                            <span>Laravel</span>
+                            <span>Agrotech</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <!-- Ganti 'assets/PesanMakan.png' dengan file lo -->
+                        <img src="assets/PesanMakan.png" alt="PesanMakan" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                        <div class="img-placeholder-project" style="display: none;">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>PesanMakan</h3>
+                        <p>Sistem manajemen restoran dan pemesanan makanan digital yang dikembangkan menggunakan framework ASP.NET.</p>
+                        <div class="tags">
+                            <span>ASP.NET</span>
+                            <span>C#</span>
+                            <span>SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section bg-dark-alt">
+        <div class="container">
+            <h2 class="section-title">Pendidikan</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Sekarang</div>
+                    <div class="timeline-content">
+                        <h3>Rekayasa Perangkat Lunak (RPL)</h3>
+                        <p class="company">SMKN 17 Jakarta</p>
+                        <p>Fokus pada pengembangan aplikasi web, algoritma, dan keamanan siber.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Lulus - 2024</div>
+                    <div class="timeline-content">
+                        <h3>Sekolah Menengah Pertama</h3>
+                        <p class="company">SMPN 127 Jakarta</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Lulus - 2021</div>
+                    <div class="timeline-content">
+                        <h3>Sekolah Dasar</h3>
+                        <p class="company">SDN 06 Jakarta</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements section">
+        <div class="container">
+            <h2 class="section-title">Prestasi & Sertifikasi</h2>
+            <div class="achievements-grid">
+                <!-- Award 1 -->
+                <div class="achievement-card fade-in">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="achievement-info">
+                        <h3>Juara 3 Lomba UI/UX Design</h3>
+                        <p>Kompetisi desain antarmuka pengguna dengan fokus pada pengalaman pengguna yang intuitif.</p>
+                    </div>
+                </div>
+                <!-- Award 2 -->
+                <div class="achievement-card fade-in">
+                    <div class="achievement-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="achievement-info">
+                        <h3>Pelatihan Web Development</h3>
+                        <p>Sertifikasi dalam pengembangan aplikasi web modern menggunakan teknologi terkini.</p>
+                    </div>
+                </div>
+                <!-- Award 3 -->
+                <div class="achievement-card fade-in">
+                    <div class="achievement-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="achievement-info">
+                        <h3>Pelatihan IT Software</h3>
+                        <p>Pengembangan kemampuan dalam siklus hidup pengembangan perangkat lunak.</p>
+                    </div>
+                </div>
+                <!-- Award 4 -->
+                <div class="achievement-card fade-in">
+                    <div class="achievement-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <div class="achievement-info">
+                        <h3>Pelatihan 3D Blender</h3>
+                        <p>Pembuatan model 3D dan aset visual menggunakan software Blender.</p>
+                    </div>
+                </div>
+                <!-- Award 5 -->
+                <div class="achievement-card fade-in">
+                    <div class="achievement-icon">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <div class="achievement-info">
+                        <h3>Pelatihan VR Milealab</h3>
+                        <p>Eksplorasi dan pengembangan teknologi Virtual Reality menggunakan platform Milealab.</p>
+                    </div>
+                </div>
+                <!-- Award 6 -->
+                <div class="achievement-card fade-in">
+                    <div class="achievement-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="achievement-info">
+                        <h3>Pelatihan JavaScript</h3>
+                        <p>Penguasaan logika pemrograman JavaScript untuk interaktivitas web yang kompleks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Informasi Kontak</h3>
+                    <p>Jangan ragu untuk menghubungi saya jika Anda memiliki pertanyaan atau ingin berkolaborasi dalam sebuah project.</p>
+                    <ul class="info-list">
+                        <li><i class="fas fa-envelope"></i> ibrahimied004@gmail.com</li>
+                        <li><i class="fas fa-location-dot"></i> Jakarta, Indonesia</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Iqbal Khoir. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="img-full">
+        <div id="modal-caption"></div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

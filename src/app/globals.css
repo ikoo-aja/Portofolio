@@ -166,7 +166,7 @@ body {
   transition: all 0.2s ease;
 }
 
-/* Token line-height label (sesuai DESIGN.md label-* LH 1.2) */
+/* Token line-height label (rasio 1.2 untuk label kecil) */
 /* Arbitrary px font sizes inherit html's line-height:1.5, which inflates label
    boxes by ~25%. These utilities restore the declared 1.2 label ratio. */
 .text-\[10px\],

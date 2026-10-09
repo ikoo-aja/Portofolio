@@ -104,15 +104,14 @@ Proyek ini telah dimigrasikan dari HTML/CSS/JS statis menjadi arsitektur **Next.
 ```
 Portofolio/
 ├── public/                     # Aset statis & berkas PDF sertifikat
-│   ├── assets/                 # Gambar FitTrack, Agriculture, PesanMakan
+│   ├── assets/                 # Tangkapan layar proyek & foto profil
 │   └── Iqbal-Khoir-Sertifikat.pdf
 ├── src/
-│   ├── app/                    # Next.js App Router (layout, page, globals.css)
+│   ├── app/                    # Next.js App Router (layout, page, globals.css, icon.svg)
 │   ├── components/             # Komponen interaktif (Navbar, Hero, Modal, dll)
 │   └── data/                   # Data terstruktur (projects, skills, education)
-├── legacy/                     # Arsip berkas statis HTML/CSS/JS lama
-├── DESIGN.md                   # Arahan desain & token visual
-├── GEMINI.md                   # Catatan konfigurasi proyek
+├── middleware.ts               # Header keamanan & pembatasan metode HTTP
+├── next.config.mjs             # Konfigurasi Next.js
 ├── tailwind.config.ts          # Konfigurasi token warna & tipografi
 └── package.json
 ```

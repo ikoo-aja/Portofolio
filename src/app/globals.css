@@ -58,7 +58,7 @@ body {
   outline-offset: 2px;
 }
 
-/* Spatial Dynamics: Surface & Card Token (8px Radius, Hairline Border, Deep Obsidian) */
+/* Token permukaan & kartu (radius 8px, border tipis, latar gelap) */
 .glass-card {
   background-color: rgba(18, 18, 18, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -73,14 +73,14 @@ body {
   box-shadow: 0 10px 35px -5px rgba(0, 0, 0, 0.7);
 }
 
-/* Spatial Dynamics: Nested Surface Token (8px Radius) */
+/* Token permukaan bersarang (radius 8px) */
 .glass-surface-subtle {
   background-color: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 8px;
 }
 
-/* Spatial Dynamics: Modal Surface (8px Radius) */
+/* Permukaan modal (radius 8px) */
 .glass-modal {
   background-color: #0c0c0c;
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -152,7 +152,7 @@ body {
   color: #ffffff;
 }
 
-/* Spatial Dynamics: Label and Tag Token (JetBrains Mono 11px 600 weight, 8px radius) */
+/* Token label & tag (mono 11px, bobot 600, radius 8px) */
 .badge-tag {
   border-radius: 8px;
   padding: 3px 8px;
@@ -166,7 +166,7 @@ body {
   transition: all 0.2s ease;
 }
 
-/* Spatial Dynamics: Label Line-Height Tokens (matches DESIGN.md label-* LH 1.2) */
+/* Token line-height label (sesuai DESIGN.md label-* LH 1.2) */
 /* Arbitrary px font sizes inherit html's line-height:1.5, which inflates label
    boxes by ~25%. These utilities restore the declared 1.2 label ratio. */
 .text-\[10px\],

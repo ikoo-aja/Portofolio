@@ -8,8 +8,8 @@ Proyek ini telah dimigrasikan dari HTML/CSS/JS statis menjadi arsitektur **Next.
 
 ## 🚀 Fitur Utama & Interaktivitas Baru
 
-1. **Interactive Hero & Telemetry Switcher**:
-   - Tab switcher interaktif langsung di hero: *Profil*, *Tech Focus*, dan *Security Stance*.
+1. **Hero & Ringkasan Keahlian**:
+   - Tab interaktif di hero: *Web & Fullstack*, *Basis Data*, dan *Keamanan*.
    - Live availability badge untuk peluang Magang/PKL.
 
 2. **Project Showcase & Detail Modal**:
@@ -31,14 +31,17 @@ Proyek ini telah dimigrasikan dari HTML/CSS/JS statis menjadi arsitektur **Next.
    - Tombol salin email satu klik dengan umpan balik visual instan ke clipboard.
    - Fallback tautan langsung ke mail client (`mailto:`).
 
-6. **Security & Telemetry Inspector (Floating Widget)**:
-   - Widget telemetri sistem di pojok kanan bawah khusus tema cybersecurity: audit konteks keamanan TLS client, spesifikasi lingkungan kerja dev, dan pintasan aksi cepat.
+6. **Informasi Sistem (Widget Melayang)**:
+   - Widget di pojok kanan bawah: status koneksi client, spesifikasi lingkungan kerja, dan pintasan aksi cepat.
 
-7. **Standar Anti-Slop Penuh**:
-   - Nol em dash (`—`) pada seluruh teks antarmuka.
-   - Nol buzzword kosong ("revolutionary", "AI-powered", "cutting-edge").
-   - Nol statistik palsu atau testimonial fiktif.
-   - Aksesibilitas WCAG AA (kontras warna tinggi, ring fokus keyboard terlihat jelas, link lewati ke konten utama).
+7. **Kualitas & Aksesibilitas**:
+   - Teks antarmuka konsisten, tanpa istilah pemasaran berlebihan.
+   - Statistik yang ditampilkan sesuai data proyek yang ada.
+   - Kontras warna tinggi, ring fokus keyboard terlihat jelas, dan tautan lewati ke konten utama.
+
+8. **Konten Berbasis Data Nyata**:
+   - Identitas visual memakai monogram inisial, bukan foto stok.
+   - Angka dan label mengacu pada data proyek/sertifikat yang benar-benar ada.
 
 ---
 
@@ -108,8 +111,8 @@ Portofolio/
 │   ├── components/             # Komponen interaktif (Navbar, Hero, Modal, dll)
 │   └── data/                   # Data terstruktur (projects, skills, education)
 ├── legacy/                     # Arsip berkas statis HTML/CSS/JS lama
-├── DESIGN.md                   # Arahan desain & identitas anti-slop
-├── GEMINI.md                   # Pointer konfigurasi anti-slop
+├── DESIGN.md                   # Arahan desain & token visual
+├── GEMINI.md                   # Catatan konfigurasi proyek
 ├── tailwind.config.ts          # Konfigurasi token warna & tipografi
 └── package.json
 ```

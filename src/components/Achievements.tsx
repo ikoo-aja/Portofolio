@@ -49,14 +49,14 @@ export default function Achievements() {
           <div className="space-y-3">
             <div className="inline-flex items-center">
               <span className="px-3 py-1 rounded-[8px] bg-white/[0.04] border border-white/10 font-mono text-[11px] font-semibold text-neutral-400">
-                05 // LISENSI &amp; PENGHARGAAN TERVERIFIKASI
+                PRESTASI &amp; SERTIFIKASI
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-medium text-white tracking-tight">
               Prestasi &amp; Lisensi
             </h2>
             <p className="font-serif text-neutral-400 text-sm sm:text-base max-w-xl font-normal">
-              Bukti kompetensi terverifikasi melalui kompetisi antarmuka digital, pelatihan rekayasa perangkat lunak, dan lisensi keahlian.
+              Kompetisi antarmuka digital, pelatihan rekayasa perangkat lunak, dan sertifikasi keahlian yang saya ikuti.
             </p>
           </div>
 

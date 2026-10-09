@@ -55,12 +55,12 @@ export default function SecurityInspector() {
   return (
     <>
       {/* Floating Toggle Button */}
-      <aside aria-label="Alat Telemetri Sistem" className="fixed bottom-5 right-5 z-40">
+      <aside aria-label="Informasi Sistem" className="fixed bottom-5 right-5 z-40">
         <button
           onClick={() => setIsOpen(!isOpen)}
           type="button"
           aria-expanded={isOpen}
-          aria-label="Buka Telemetri &amp; Status Sistem"
+          aria-label="Buka Informasi Sistem"
           className="btn-ghost-pill group flex items-center gap-2.5 px-4 py-2.5 rounded-[8px] text-xs font-mono font-medium shadow-2xl border border-white/15 bg-neutral-900/90 hover:border-white/30 backdrop-blur-md transition-all"
         >
           <ShieldCheck className="w-4 h-4 text-emerald-400" />
@@ -89,7 +89,7 @@ export default function SecurityInspector() {
               <div className="flex items-center gap-2 text-white font-medium">
                 <ShieldCheck className="w-4 h-4 text-emerald-400" />
                 <span id="inspector-heading" className="font-display font-medium text-sm text-white">
-                  Inspeksi Sistem &amp; Telemetri
+                  Informasi Sistem
                 </span>
               </div>
               <button

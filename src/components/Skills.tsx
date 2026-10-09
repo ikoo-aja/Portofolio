@@ -74,7 +74,7 @@ export default function Skills() {
         <div className="text-center space-y-3 max-w-2xl mx-auto">
           <div className="inline-flex items-center justify-center">
             <span className="px-3 py-1 rounded-[8px] bg-white/[0.04] border border-white/10 font-mono text-[11px] font-semibold text-neutral-400">
-              02 // STACK &amp; KAPABILITAS TEKNIS
+              KAPABILITAS TEKNIS
             </span>
           </div>
 

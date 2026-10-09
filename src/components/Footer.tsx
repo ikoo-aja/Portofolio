@@ -61,8 +61,8 @@ export default function Footer() {
         </div>
 
         <div className="pt-4 border-t border-white/[0.08] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-neutral-500 font-mono">
-          <p>&copy; 2026 Iqbal Khoir. Seluruh data proyek dan sertifikasi terverifikasi.</p>
-          <p>Spatial Dynamics &bull; Visionary Arts Symposium</p>
+          <p>&copy; 2026 Iqbal Khoir.</p>
+          <p>Dibuat dengan Next.js &amp; Tailwind CSS</p>
         </div>
       </div>
     </footer>

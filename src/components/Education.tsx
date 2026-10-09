@@ -9,7 +9,7 @@ export default function Education() {
         <div className="space-y-3 text-center">
           <div className="inline-flex items-center justify-center">
             <span className="px-3 py-1 rounded-[8px] bg-white/[0.04] border border-white/10 font-mono text-[11px] font-semibold text-neutral-400">
-              04 // JEJAK PENDIDIKAN FORMAL
+              PENDIDIKAN FORMAL
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-medium text-white tracking-tight">

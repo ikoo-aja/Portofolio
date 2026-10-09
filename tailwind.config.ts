@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Spatial Dynamics | Visionary Arts Symposium Palette
+        // Palet portofolio: kanvas gelap, teks terang
         // Dark obsidian canvas. Token roles are mirrored from globals.css :root.
         spatial: {
           primary: "#FFFFFF",
@@ -34,10 +34,10 @@ const config: Config = {
       borderRadius: {
         badge: "6px",
         input: "8px",
-        card: "8px",     // Spatial Dynamics rounded.card token: 8px
+        card: "8px",     // radius kartu: 8px
         modal: "8px",
-        control: "8px",   // Spatial Dynamics rounded.control token: 8px
-        pill: "9999px",   // Spatial Dynamics rounded.pill token: 9999px
+        control: "8px",   // radius kontrol: 8px
+        pill: "9999px",   // radius pill: 9999px
         circle: "9999px",
       },
       boxShadow: {

@@ -1,7 +1,7 @@
 ---
 version: "neuform-top-creators-featured"
-name: "Spatial Dynamics | Visionary Arts Symposium"
-description: "Visionary Arts UI Showcase Section is designed for demonstrating an application interface and hierarchy. Key features include dashboard-like visual hierarchy and dense but readable content organization. Built with custom CSS, it is suitable for product showcases and interface-first landing experiences."
+name: "Portofolio Iqbal Khoir"
+description: "Portofolio pribadi Iqbal Khoir. Tata letak gelap dengan hierarki informasi rapi, grid 12 kolom, dan tipografi mono untuk label teknis."
 colors:
   primary: "#FFFFFF"
   secondary: "#000000"
@@ -81,16 +81,13 @@ components:
     background: "Use primary or accent colors for the main action"
     radius: "Use the control or pill radius based on the source HTML"
 ---
-# Spatial Dynamics | Visionary Arts Symposium
-Source: Neuform Featured templates from top creators. Author: Meng To (@mengto). Views: 12; favorites: 3; remixes: 1.
-Tags: dashboard, charts, bento, animated, webgl, threejs, flow, effect.
+# Portofolio Iqbal Khoir
+Token desain untuk portofolio pribadi Iqbal Khoir. Referensi visual awal berasal dari templat Neuform Featured (penulis: Meng To).
 ## Overview
-Visionary Arts UI Showcase Section is designed for demonstrating an application interface and hierarchy. Key features include dashboard-like visual hierarchy and dense but readable content organization. Built with custom CSS, it is suitable for product showcases and interface-first landing experiences.
-
-Vertex Collective Global Design Forum 2030 Spatial Dynamics Pioneering immersive environments where physical architecture seamlessly blends with digital cognition. We engineer the unseen. Aria Sterling Lead Experiential…
+Tata letak bergaya dashboard gelap: grid 12 kolom, kartu bertingkat dengan radius 8px, dan label teknis berjenis mono. Kontennya ringkas namun tetap terbaca, dengan penekanan pada hierarki angka dan metadata.
 ## Composition
 Use the attached HTML reference as the source of truth. Preserve the visible hierarchy, first-screen composition, section rhythm, density, and interaction tone before adapting copy or content.
-Key visible headings include: Spatial Dynamics; Aria Sterling.
+Judul utama halaman: nama pemilik portofolio dan judul tiap bagian.
 ## Colors
 Anchor the palette in primary #FFFFFF, secondary #000000, accent #FFFFFF, background #FFFFFF, surface #FFFFFF, text-primary #111827. Keep background, surface, text, and border roles distinct so generated layouts retain the same contrast pattern as the source.
 ## Typography

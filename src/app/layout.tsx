@@ -21,25 +21,25 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Iqbal Khoir | Spatial Dynamics • Visionary Arts Showcase",
+  title: "Iqbal Khoir | Software Engineering & Web Development",
   description:
-    "Portofolio resmi Iqbal Khoir, siswa Rekayasa Perangkat Lunak SMKN 17 Jakarta dengan estetika Spatial Dynamics Visionary Arts yang bersih, terstruktur, dan presisi.",
+    "Portofolio Iqbal Khoir, siswa Rekayasa Perangkat Lunak SMKN 17 Jakarta. Pengembangan aplikasi web dan mobile, basis data relasional, serta dasar keamanan web.",
   keywords: [
     "Iqbal Khoir",
-    "Portfolio",
-    "Software Engineering",
-    "Cyber Security",
+    "Portofolio",
+    "Rekayasa Perangkat Lunak",
+    "SMKN 17 Jakarta",
+    "Web Development",
     "Next.js",
     "Laravel",
     "ASP.NET Core",
     "PostgreSQL",
-    "SMKN 17 Jakarta",
   ],
   authors: [{ name: "Iqbal Khoir" }],
   openGraph: {
-    title: "Iqbal Khoir | Software Engineering & Cyber Security",
+    title: "Iqbal Khoir | Software Engineering & Web Development",
     description:
-      "Portofolio resmi Iqbal Khoir: Rekayasa Perangkat Lunak, Web & Mobile Development, serta Keamanan Siber.",
+      "Portofolio Iqbal Khoir: Rekayasa Perangkat Lunak, pengembangan web & mobile, serta dasar keamanan web.",
     type: "website",
   },
 };

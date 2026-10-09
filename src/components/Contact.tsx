@@ -79,7 +79,7 @@ export default function Contact() {
         <div className="space-y-3 text-center">
           <div className="inline-flex items-center justify-center">
             <span className="px-3 py-1 rounded-[8px] bg-white/[0.04] border border-white/10 font-mono text-[11px] font-semibold text-neutral-400">
-              06 // SALURAN KOMUNIKASI &amp; PROTOKOL
+              KONTAK
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-medium text-white tracking-tight">
@@ -227,7 +227,7 @@ export default function Contact() {
                         type="text"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        placeholder="Contoh: Budi Santoso"
+                        placeholder="Nama lengkap Anda"
                         required
                         className="w-full px-4 py-3 rounded-[8px] bg-neutral-950 border border-white/10 text-white placeholder:text-neutral-600 text-sm font-normal focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-colors"
                       />
@@ -242,7 +242,7 @@ export default function Contact() {
                         type="email"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        placeholder="nama@perusahaan.com"
+                        placeholder="nama@email.com"
                         required
                         className="w-full px-4 py-3 rounded-[8px] bg-neutral-950 border border-white/10 text-white placeholder:text-neutral-600 text-sm font-normal focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-colors"
                       />
@@ -258,7 +258,7 @@ export default function Contact() {
                       type="text"
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                      placeholder="Contoh: Peluang Magang / Kolaborasi Proyek"
+                      placeholder="Contoh: Peluang magang / kolaborasi"
                       className="w-full px-4 py-3 rounded-[8px] bg-neutral-950 border border-white/10 text-white placeholder:text-neutral-600 text-sm font-normal focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-colors"
                     />
                   </div>

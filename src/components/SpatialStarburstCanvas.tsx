@@ -29,13 +29,14 @@ export default function SpatialStarburstCanvas() {
     const material = new THREE.LineBasicMaterial({
       color: 0xeadbb8,
       transparent: true,
-      opacity: 0.45,
+      opacity: 0.30,
       blending: THREE.AdditiveBlending,
     });
 
     const geometry = new THREE.BufferGeometry();
     const points: number[] = [];
-    const lineCount = 300;
+    // Dikurangi dari 300 agar bidang tidak terlalu rapat dan tidak menyilaukan
+    const lineCount = 130;
     const radius = 40;
 
     const originX = 25;
@@ -78,14 +79,15 @@ export default function SpatialStarburstCanvas() {
 
     const animate = () => {
       animationId = requestAnimationFrame(animate);
-      time += 0.012;
+      time += 0.005;
 
       const positionAttr = lines.geometry.attributes.position;
       const positions = positionAttr.array as Float32Array;
 
       for (let i = 0; i < lineCount; i++) {
         const pIdx = i * 6 + 3;
-        const pulse = 0.3 + 0.7 * Math.abs(Math.sin(time + basePhases[i]));
+        // Rentang denyut diperkecil (0.3-1.0 -> 0.75-1.0) supaya gerakannya halus
+        const pulse = 0.75 + 0.25 * Math.abs(Math.sin(time + basePhases[i]));
         const currentRadius = radius * pulse;
 
         positions[pIdx] = originX + dirs[i].x * currentRadius;
@@ -94,8 +96,8 @@ export default function SpatialStarburstCanvas() {
       }
       positionAttr.needsUpdate = true;
 
-      lines.rotation.z = time * 0.1;
-      lines.rotation.x = Math.sin(time * 0.5) * 0.1;
+      lines.rotation.z = time * 0.05;
+      lines.rotation.x = Math.sin(time * 0.5) * 0.05;
 
       renderer.render(scene, camera);
     };
@@ -128,8 +130,15 @@ export default function SpatialStarburstCanvas() {
       aria-hidden="true"
       className="fixed inset-0 pointer-events-none z-0"
       style={{
+        // "screen" membuat garis menembus teks yang ada di atasnya. Dikurangi
+        // agar latar tetap terasa, tapi tidak lagi mengganggu keterbacaan.
         mixBlendMode: "screen",
-        opacity: 0.65,
+        opacity: 0.45,
+        // Perlahan memudar ke bawah: area teks di bagian atas tetap tenang.
+        maskImage:
+          "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0.8) 100%)",
+        WebkitMaskImage:
+          "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0.8) 100%)",
       }}
     />
   );

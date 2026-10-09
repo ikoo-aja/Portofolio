@@ -16,6 +16,17 @@ export default function Home() {
       {/* Three.js Radiating Starburst Canvas */}
       <SpatialStarburstCanvas />
 
+      {/* Peredam: lapisan gelap tipis di atas efek agar teks selalu terbaca.
+          Tanpa ini, garis putih terang masih bisa menabrak teks di section bawah. */}
+      <div
+        aria-hidden="true"
+        className="fixed inset-0 pointer-events-none z-0"
+        style={{
+          background:
+            "radial-gradient(circle at 50% 30%, rgba(5,5,5,0.3) 0%, rgba(5,5,5,0.55) 60%, rgba(5,5,5,0.7) 100%)",
+        }}
+      />
+
       {/* Architectural Container Lines & Corner Squares */}
       <div className="fixed inset-0 z-0 pointer-events-none flex justify-center w-full">
         <div className="relative w-full max-w-7xl border-x border-white/[0.04] h-full hidden md:block">

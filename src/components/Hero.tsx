@@ -36,9 +36,9 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
           {/* Left Column: Signature Portrait Frame (5 cols) */}
           <div className="lg:col-span-5 flex flex-col justify-center items-center lg:items-start w-full order-2 lg:order-1">
-            {/* Signature Portrait Frame: monogram inisial */}
+            {/* Foto profil */}
             <div
-              className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-full lg:max-w-md aspect-square"
+              className="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-full lg:max-w-xs aspect-square"
               style={{
                 background:
                   "linear-gradient(135deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.03) 50%, rgba(255,255,255,0) 100%)",
@@ -48,29 +48,29 @@ export default function Hero() {
                   "0 0 60px rgba(0,0,0,0.8), inset 0 0 30px rgba(0,0,0,0.9)",
               }}
             >
-              <div className="rounded-full overflow-hidden bg-neutral-950 w-full h-full relative flex items-center justify-center">
-                <span
-                  role="img"
-                  aria-label="Monogram Iqbal Khoir"
-                  className="font-serif text-[104px] sm:text-[132px] lg:text-[160px] leading-none text-white/[0.92] select-none"
-                  style={{ letterSpacing: "-0.04em" }}
-                >
-                  IK
-                </span>
-                {/* Inner subtle vignette */}
+              <div className="rounded-full overflow-hidden bg-neutral-950 w-full h-full relative">
+                <Image
+                  src="/assets/iqbal-khoir.jpg"
+                  alt="Foto Iqbal Khoir"
+                  fill
+                  priority
+                  sizes="(max-width: 640px) 224px, (max-width: 1024px) 288px, 320px"
+                  className="object-cover object-top contrast-[1.05] saturate-[0.9] transition-transform duration-700 ease-out hover:scale-[1.03]"
+                />
+                {/* Vignette lembut agar menyatu dengan latar gelap */}
                 <div
                   style={{
                     position: "absolute",
                     inset: 0,
                     background:
-                      "radial-gradient(circle at center, transparent 35%, rgba(0,0,0,0.85) 100%)",
+                      "radial-gradient(circle at 50% 40%, transparent 45%, rgba(0,0,0,0.55) 100%)",
                     pointerEvents: "none",
                   }}
                 />
               </div>
             </div>
 
-            {/* Identitas singkat di bawah monogram */}
+            {/* Identitas singkat di bawah foto */}
             <div className="mt-5 flex items-center gap-2 font-mono text-[11px] text-neutral-400">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
               <span>Iqbal Khoir &bull; SMKN 17 Jakarta</span>

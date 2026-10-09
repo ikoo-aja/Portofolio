@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X, ArrowUpRight, Layers } from "lucide-react";
+import { Menu, X, ArrowUpRight } from "lucide-react";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -38,18 +38,18 @@ export default function Navbar() {
   }, []);
 
   const navItems = [
-    { label: "01. Tentang", href: "#about", id: "about" },
-    { label: "02. Keahlian", href: "#skills", id: "skills" },
-    { label: "03. Proyek", href: "#projects", id: "projects" },
-    { label: "04. Pendidikan", href: "#education", id: "education" },
-    { label: "05. Prestasi", href: "#achievements", id: "achievements" },
-    { label: "06. Kontak", href: "#contact", id: "contact" },
+    { label: "Tentang", href: "#about", id: "about" },
+    { label: "Keahlian", href: "#skills", id: "skills" },
+    { label: "Proyek", href: "#projects", id: "projects" },
+    { label: "Pendidikan", href: "#education", id: "education" },
+    { label: "Prestasi", href: "#achievements", id: "achievements" },
+    { label: "Kontak", href: "#contact", id: "contact" },
   ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-40 bg-[#050505]/85 backdrop-blur-md border-b border-white/[0.06]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between relative">
-        {/* Left: 40x40 glass box + 2-line title matching template */}
+        {/* Left: Logo monogram + nama */}
         <div className="flex items-center gap-3.5">
           <a
             href="#home"
@@ -57,14 +57,19 @@ export default function Navbar() {
             aria-label="Iqbal Khoir Beranda"
           >
             <div
-              className="w-10 h-10 rounded-[8px] flex items-center justify-center transition-all duration-300 group-hover:border-white/30"
+              className="w-10 h-10 rounded-[8px] flex items-center justify-center transition-all duration-300 group-hover:border-white/35 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.12)]"
               style={{
-                border: "1px solid rgba(255,255,255,0.15)",
+                border: "1px solid rgba(255,255,255,0.18)",
                 background:
-                  "linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0) 100%)",
+                  "linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 100%)",
               }}
             >
-              <Layers className="w-5 h-5 text-white" strokeWidth={1.5} />
+              <span
+                className="font-mono text-sm font-semibold text-white leading-none tracking-tight"
+                aria-hidden="true"
+              >
+                &lsaquo;IK&rsaquo;
+              </span>
             </div>
             <div className="text-xs uppercase tracking-widest text-neutral-400 font-extralight font-sans leading-[1.15]">
               Iqbal<br /><span className="text-white font-normal">Khoir</span>
@@ -72,7 +77,7 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Center: Desktop Navigation Bar with Mono Index Tags */}
+        {/* Center: Navigasi utama */}
         <nav className="hidden lg:flex items-center gap-1.5" aria-label="Navigasi Utama">
           {navItems.map((item) => {
             const isActive = activeSection === item.id;

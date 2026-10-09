@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-canvas: #050505;
+  --color-surface: rgba(18, 18, 18, 0.75);
+  --color-surface-subtle: rgba(255, 255, 255, 0.03);
+  --color-surface-elevated: rgba(255, 255, 255, 0.06);
+  --color-text-primary: #fafafa;
+  --color-text-secondary: #a3a3a3;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border-hover: rgba(255, 255, 255, 0.25);
+  --color-accent: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #050505;
+  color: #fafafa;
+}
+
+body {
+  min-height: 100dvh;
+  background-color: #050505;
+  color: #fafafa;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #262626;
+  color: #ffffff;
+}
+
+/* Architectural Minimalist Dark Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 9999px;
+  border: 1px solid #050505;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #404040;
+}
+
+/* Keyboard accessibility focus ring */
+:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* Spatial Dynamics: Surface & Card Token (8px Radius, Hairline Border, Deep Obsidian) */
+.glass-card {
+  background-color: rgba(18, 18, 18, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 35px -5px rgba(0, 0, 0, 0.7);
+}
+
+/* Spatial Dynamics: Nested Surface Token (8px Radius) */
+.glass-surface-subtle {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+}
+
+/* Spatial Dynamics: Modal Surface (8px Radius) */
+.glass-modal {
+  background-color: #0c0c0c;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.9);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Primary Action Button: Pure Crisp White with Dark Text */
+.btn-violet-cta {
+  background-color: #ffffff;
+  color: #050505;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-violet-cta:hover {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+.btn-violet-cta:active {
+  transform: translateY(0);
+}
+
+/* Secondary Button: Elevated Translucent Dark Pill / 8px */
+.btn-ghost-pill {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-ghost-pill:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-ghost-pill:active {
+  transform: translateY(0);
+}
+
+/* Outlined Button */
+.btn-outlined-pill {
+  background-color: transparent;
+  color: #a3a3a3;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-outlined-pill:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+}
+
+/* Solid Display Headings */
+.text-skywash {
+  color: #ffffff;
+}
+
+/* Spatial Dynamics: Label and Tag Token (JetBrains Mono 11px 600 weight, 8px radius) */
+.badge-tag {
+  border-radius: 8px;
+  padding: 3px 8px;
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 600;
+  font-family: var(--font-mono), monospace;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #d4d4d4;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+}
+
+/* Spatial Dynamics: Label Line-Height Tokens (matches DESIGN.md label-* LH 1.2) */
+/* Arbitrary px font sizes inherit html's line-height:1.5, which inflates label
+   boxes by ~25%. These utilities restore the declared 1.2 label ratio. */
+.text-\[10px\],
+.text-\[11px\] {
+  line-height: 1.2;
+}
+
+/* Keep the two readable-body usages at a comfortable ratio instead of 1.5. */
+.text-\[11px\].leading-relaxed {
+  line-height: 1.625;
+}
+
+/* Subtle architectural hairline dividers */
+.hairline-border {
+  border-color: rgba(255, 255, 255, 0.08);
+}

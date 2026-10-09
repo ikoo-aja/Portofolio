@@ -23,7 +23,7 @@ export default function Home() {
         className="fixed inset-0 pointer-events-none z-0"
         style={{
           background:
-            "radial-gradient(circle at 50% 30%, rgba(5,5,5,0.3) 0%, rgba(5,5,5,0.55) 60%, rgba(5,5,5,0.7) 100%)",
+            "radial-gradient(circle at 50% 30%, rgba(5,5,5,0.18) 0%, rgba(5,5,5,0.42) 60%, rgba(5,5,5,0.58) 100%)",
         }}
       />
 

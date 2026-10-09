@@ -29,7 +29,7 @@ export default function SpatialStarburstCanvas() {
     const material = new THREE.LineBasicMaterial({
       color: 0xeadbb8,
       transparent: true,
-      opacity: 0.30,
+      opacity: 0.42,
       blending: THREE.AdditiveBlending,
     });
 
@@ -133,7 +133,7 @@ export default function SpatialStarburstCanvas() {
         // "screen" membuat garis menembus teks yang ada di atasnya. Dikurangi
         // agar latar tetap terasa, tapi tidak lagi mengganggu keterbacaan.
         mixBlendMode: "screen",
-        opacity: 0.45,
+        opacity: 0.60,
         // Perlahan memudar ke bawah: area teks di bagian atas tetap tenang.
         maskImage:
           "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0.8) 100%)",

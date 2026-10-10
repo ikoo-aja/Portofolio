@@ -36,34 +36,39 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
           {/* Left Column: Signature Portrait Frame (5 cols) */}
           <div className="lg:col-span-5 flex flex-col justify-center items-center lg:items-start w-full order-2 lg:order-1">
-            {/* Foto profil */}
+            {/* Foto profil: seluruh bagian foto terlihat, proporsi asli utuh.
+                Frame dibuat sedikit membulat (bukan lingkaran penuh) supaya
+                foto portrait tidak menyisakan ruang kosong di kiri-kanan. */}
             <div
-              className="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-full lg:max-w-xs aspect-square"
+              className="relative w-52 sm:w-64 lg:w-full lg:max-w-[300px] aspect-[9/16]"
               style={{
                 background:
                   "linear-gradient(135deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.03) 50%, rgba(255,255,255,0) 100%)",
                 padding: "1px",
-                borderRadius: "9999px",
+                borderRadius: "20px",
                 boxShadow:
                   "0 0 60px rgba(0,0,0,0.8), inset 0 0 30px rgba(0,0,0,0.9)",
               }}
             >
-              <div className="rounded-full overflow-hidden bg-neutral-950 w-full h-full relative">
+              <div
+                className="overflow-hidden bg-neutral-950 w-full h-full relative"
+                style={{ borderRadius: "19px" }}
+              >
                 <Image
                   src="/assets/iqbal-khoir.jpeg"
                   alt="Foto Iqbal Khoir"
                   fill
                   priority
-                  sizes="(max-width: 640px) 224px, (max-width: 1024px) 288px, 640px"
-                  className="object-cover object-[50%_32%] scale-[1.22] contrast-[1.05] saturate-[0.92] transition-transform duration-700 ease-out hover:scale-[1.28]"
+                  sizes="(max-width: 640px) 208px, (max-width: 1024px) 256px, 600px"
+                  className="object-contain contrast-[1.05] saturate-[0.92]"
                 />
-                {/* Vignette lembut agar menyatu dengan latar gelap */}
+                {/* Vignette tipis di tepi saja */}
                 <div
                   style={{
                     position: "absolute",
                     inset: 0,
                     background:
-                      "radial-gradient(circle at 50% 42%, transparent 52%, rgba(0,0,0,0.5) 100%)",
+                      "radial-gradient(circle at 50% 45%, transparent 68%, rgba(0,0,0,0.42) 100%)",
                     pointerEvents: "none",
                   }}
                 />

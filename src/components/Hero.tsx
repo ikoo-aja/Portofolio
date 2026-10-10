@@ -50,12 +50,12 @@ export default function Hero() {
             >
               <div className="rounded-full overflow-hidden bg-neutral-950 w-full h-full relative">
                 <Image
-                  src="/assets/iqbal-khoir.jpg"
+                  src="/assets/iqbal-khoir.jpeg"
                   alt="Foto Iqbal Khoir"
                   fill
                   priority
-                  sizes="(max-width: 640px) 224px, (max-width: 1024px) 288px, 320px"
-                  className="object-cover object-top contrast-[1.05] saturate-[0.9] transition-transform duration-700 ease-out hover:scale-[1.03]"
+                  sizes="(max-width: 640px) 224px, (max-width: 1024px) 288px, 640px"
+                  className="object-cover object-[50%_32%] scale-[1.22] contrast-[1.05] saturate-[0.92] transition-transform duration-700 ease-out hover:scale-[1.28]"
                 />
                 {/* Vignette lembut agar menyatu dengan latar gelap */}
                 <div
@@ -63,7 +63,7 @@ export default function Hero() {
                     position: "absolute",
                     inset: 0,
                     background:
-                      "radial-gradient(circle at 50% 40%, transparent 45%, rgba(0,0,0,0.55) 100%)",
+                      "radial-gradient(circle at 50% 42%, transparent 52%, rgba(0,0,0,0.5) 100%)",
                     pointerEvents: "none",
                   }}
                 />

@@ -36,31 +36,30 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
           {/* Left Column: Signature Portrait Frame (5 cols) */}
           <div className="lg:col-span-5 flex flex-col justify-center items-center lg:items-start w-full order-2 lg:order-1">
-            {/* Foto profil: seluruh bagian foto terlihat, proporsi asli utuh.
-                Frame dibuat sedikit membulat (bukan lingkaran penuh) supaya
-                foto portrait tidak menyisakan ruang kosong di kiri-kanan. */}
+            {/* Foto profil: diperkecil, sudut membulat cukup jelas, foto di-crop
+                secukupnya agar frame terisi penuh tanpa kehilangan subjek. */}
             <div
-              className="relative w-52 sm:w-64 lg:w-full lg:max-w-[300px] aspect-[9/16]"
+              className="relative w-40 h-40 sm:w-48 sm:h-48 lg:w-full lg:max-w-[240px] lg:h-auto lg:aspect-square"
               style={{
                 background:
                   "linear-gradient(135deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.03) 50%, rgba(255,255,255,0) 100%)",
                 padding: "1px",
-                borderRadius: "20px",
+                borderRadius: "28px",
                 boxShadow:
-                  "0 0 60px rgba(0,0,0,0.8), inset 0 0 30px rgba(0,0,0,0.9)",
+                  "0 0 50px rgba(0,0,0,0.75), inset 0 0 24px rgba(0,0,0,0.85)",
               }}
             >
               <div
                 className="overflow-hidden bg-neutral-950 w-full h-full relative"
-                style={{ borderRadius: "19px" }}
+                style={{ borderRadius: "27px" }}
               >
                 <Image
                   src="/assets/iqbal-khoir.jpeg"
                   alt="Foto Iqbal Khoir"
                   fill
                   priority
-                  sizes="(max-width: 640px) 208px, (max-width: 1024px) 256px, 600px"
-                  className="object-contain contrast-[1.05] saturate-[0.92]"
+                  sizes="(max-width: 640px) 192px, 480px"
+                  className="object-cover object-[50%_30%] contrast-[1.05] saturate-[0.92]"
                 />
                 {/* Vignette tipis di tepi saja */}
                 <div
@@ -68,7 +67,7 @@ export default function Hero() {
                     position: "absolute",
                     inset: 0,
                     background:
-                      "radial-gradient(circle at 50% 45%, transparent 68%, rgba(0,0,0,0.42) 100%)",
+                      "linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 38%)",
                     pointerEvents: "none",
                   }}
                 />
